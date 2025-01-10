@@ -13,7 +13,7 @@ struct CountoramaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CountoramaTabView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

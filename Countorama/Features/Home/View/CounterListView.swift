@@ -9,7 +9,14 @@ import SwiftUI
 
 struct CounterListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List{
+            CounterListItemView()
+            CounterListItemView()
+            CounterListItemView()
+            CounterListItemView()
+            CounterListItemView()
+        }
+        .listStyle(.plain)
     }
 }
 

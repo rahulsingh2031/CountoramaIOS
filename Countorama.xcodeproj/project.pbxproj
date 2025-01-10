@@ -7,22 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2D456C2D30343700C1F45A /* AnalysisDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D456B2D30343700C1F45A /* AnalysisDetailPage.swift */; };
+		1F2D456E2D30437A00C1F45A /* AnalysisDetailEditPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D456D2D30437A00C1F45A /* AnalysisDetailEditPage.swift */; };
+		1F346DC62D2AD50400113DFF /* CounterGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F346DC52D2AD50400113DFF /* CounterGridView.swift */; };
+		1F346DC82D2AD5B200113DFF /* CounterGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F346DC72D2AD5B200113DFF /* CounterGridItemView.swift */; };
+		1F346DCA2D2AD9FD00113DFF /* CounterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F346DC92D2AD9FD00113DFF /* CounterListView.swift */; };
+		1F346DCF2D2ADE4800113DFF /* CountersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F346DCE2D2ADE4800113DFF /* CountersView.swift */; };
 		1F658BCF2D28593800AD8940 /* CountoramaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F658BCE2D28593800AD8940 /* CountoramaApp.swift */; };
-		1F658BD12D28593800AD8940 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F658BD02D28593800AD8940 /* ContentView.swift */; };
 		1F658BD32D28593C00AD8940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F658BD22D28593C00AD8940 /* Assets.xcassets */; };
 		1F658BD62D28593C00AD8940 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F658BD52D28593C00AD8940 /* Preview Assets.xcassets */; };
 		1F658BD82D28593C00AD8940 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F658BD72D28593C00AD8940 /* Persistence.swift */; };
 		1F658BDB2D28593C00AD8940 /* Countorama.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F658BD92D28593C00AD8940 /* Countorama.xcdatamodeld */; };
+		1F658BE52D285ABD00AD8940 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F658BE42D285ABD00AD8940 /* HomePage.swift */; };
+		1F90D53B2D29AE3300A30CBF /* HomeDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90D53A2D29AE3300A30CBF /* HomeDrawer.swift */; };
+		1F90D53F2D29B80200A30CBF /* CountoramaTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90D53E2D29B80200A30CBF /* CountoramaTabView.swift */; };
+		1F90D5422D29B90500A30CBF /* TagPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90D5412D29B90500A30CBF /* TagPage.swift */; };
+		1F90D5472D29B93700A30CBF /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90D5462D29B93700A30CBF /* SettingPage.swift */; };
+		1FBBCB022D286E0300DDE9BB /* CounterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBCB012D286E0300DDE9BB /* CounterListItemView.swift */; };
+		1FBBCB042D2876A000DDE9BB /* AddCounterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBCB032D2876A000DDE9BB /* AddCounterPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F2D456B2D30343700C1F45A /* AnalysisDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisDetailPage.swift; sourceTree = "<group>"; };
+		1F2D456D2D30437A00C1F45A /* AnalysisDetailEditPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisDetailEditPage.swift; sourceTree = "<group>"; };
+		1F346DC52D2AD50400113DFF /* CounterGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterGridView.swift; sourceTree = "<group>"; };
+		1F346DC72D2AD5B200113DFF /* CounterGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterGridItemView.swift; sourceTree = "<group>"; };
+		1F346DC92D2AD9FD00113DFF /* CounterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListView.swift; sourceTree = "<group>"; };
+		1F346DCE2D2ADE4800113DFF /* CountersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersView.swift; sourceTree = "<group>"; };
 		1F658BCB2D28593800AD8940 /* Countorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F658BCE2D28593800AD8940 /* CountoramaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountoramaApp.swift; sourceTree = "<group>"; };
-		1F658BD02D28593800AD8940 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F658BD22D28593C00AD8940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F658BD52D28593C00AD8940 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F658BD72D28593C00AD8940 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1F658BDA2D28593C00AD8940 /* Countorama.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Countorama.xcdatamodel; sourceTree = "<group>"; };
+		1F658BE42D285ABD00AD8940 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		1F90D53A2D29AE3300A30CBF /* HomeDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDrawer.swift; sourceTree = "<group>"; };
+		1F90D53E2D29B80200A30CBF /* CountoramaTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountoramaTabView.swift; sourceTree = "<group>"; };
+		1F90D5412D29B90500A30CBF /* TagPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPage.swift; sourceTree = "<group>"; };
+		1F90D5462D29B93700A30CBF /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		1FBBCB012D286E0300DDE9BB /* CounterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListItemView.swift; sourceTree = "<group>"; };
+		1FBBCB032D2876A000DDE9BB /* AddCounterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F2D456A2D30341800C1F45A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				1F2D456B2D30343700C1F45A /* AnalysisDetailPage.swift */,
+				1F2D456D2D30437A00C1F45A /* AnalysisDetailEditPage.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		1F346DCB2D2ADD7E00113DFF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		1F658BC22D28593800AD8940 = {
 			isa = PBXGroup;
 			children = (
@@ -55,8 +95,10 @@
 		1F658BCD2D28593800AD8940 /* Countorama */ = {
 			isa = PBXGroup;
 			children = (
+				1F346DCB2D2ADD7E00113DFF /* Common */,
+				1F658BE12D285A8B00AD8940 /* Features */,
+				1F90D53E2D29B80200A30CBF /* CountoramaTabView.swift */,
 				1F658BCE2D28593800AD8940 /* CountoramaApp.swift */,
-				1F658BD02D28593800AD8940 /* ContentView.swift */,
 				1F658BD22D28593C00AD8940 /* Assets.xcassets */,
 				1F658BD72D28593C00AD8940 /* Persistence.swift */,
 				1F658BD92D28593C00AD8940 /* Countorama.xcdatamodeld */,
@@ -71,6 +113,80 @@
 				1F658BD52D28593C00AD8940 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F658BE12D285A8B00AD8940 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1F2D456A2D30341800C1F45A /* Details */,
+				1F90D5442D29B92300A30CBF /* Settings */,
+				1F90D5402D29B8F300A30CBF /* Tag */,
+				1F658BE22D285A9300AD8940 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1F658BE22D285A9300AD8940 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1FBBCB002D286DD400DDE9BB /* Page */,
+				1F658BE32D285A9F00AD8940 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1F658BE32D285A9F00AD8940 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FBBCB012D286E0300DDE9BB /* CounterListItemView.swift */,
+				1F90D53A2D29AE3300A30CBF /* HomeDrawer.swift */,
+				1F346DC52D2AD50400113DFF /* CounterGridView.swift */,
+				1F346DC72D2AD5B200113DFF /* CounterGridItemView.swift */,
+				1F346DC92D2AD9FD00113DFF /* CounterListView.swift */,
+				1F346DCE2D2ADE4800113DFF /* CountersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F90D5402D29B8F300A30CBF /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				1F90D5432D29B91600A30CBF /* Page */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		1F90D5432D29B91600A30CBF /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				1F90D5412D29B90500A30CBF /* TagPage.swift */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		1F90D5442D29B92300A30CBF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1F90D5452D29B92D00A30CBF /* Page */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1F90D5452D29B92D00A30CBF /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				1F90D5462D29B93700A30CBF /* SettingPage.swift */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		1FBBCB002D286DD400DDE9BB /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				1F658BE42D285ABD00AD8940 /* HomePage.swift */,
+				1FBBCB032D2876A000DDE9BB /* AddCounterPage.swift */,
+			);
+			path = Page;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +259,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F90D53B2D29AE3300A30CBF /* HomeDrawer.swift in Sources */,
+				1F2D456E2D30437A00C1F45A /* AnalysisDetailEditPage.swift in Sources */,
+				1F90D5472D29B93700A30CBF /* SettingPage.swift in Sources */,
+				1F90D5422D29B90500A30CBF /* TagPage.swift in Sources */,
 				1F658BDB2D28593C00AD8940 /* Countorama.xcdatamodeld in Sources */,
+				1F346DC82D2AD5B200113DFF /* CounterGridItemView.swift in Sources */,
+				1F346DCA2D2AD9FD00113DFF /* CounterListView.swift in Sources */,
+				1F346DC62D2AD50400113DFF /* CounterGridView.swift in Sources */,
+				1F658BE52D285ABD00AD8940 /* HomePage.swift in Sources */,
 				1F658BD82D28593C00AD8940 /* Persistence.swift in Sources */,
-				1F658BD12D28593800AD8940 /* ContentView.swift in Sources */,
+				1F346DCF2D2ADE4800113DFF /* CountersView.swift in Sources */,
+				1FBBCB042D2876A000DDE9BB /* AddCounterPage.swift in Sources */,
+				1F90D53F2D29B80200A30CBF /* CountoramaTabView.swift in Sources */,
+				1F2D456C2D30343700C1F45A /* AnalysisDetailPage.swift in Sources */,
 				1F658BCF2D28593800AD8940 /* CountoramaApp.swift in Sources */,
+				1FBBCB022D286E0300DDE9BB /* CounterListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,9 +405,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Countorama/Preview Content\"";
+				DEVELOPMENT_TEAM = QWH2WL4S5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -287,13 +417,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.entilitystudio.Countorama;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entilitystudio.CountoramaIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,9 +437,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Countorama/Preview Content\"";
+				DEVELOPMENT_TEAM = QWH2WL4S5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -315,13 +449,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.entilitystudio.Countorama;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entilitystudio.CountoramaIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

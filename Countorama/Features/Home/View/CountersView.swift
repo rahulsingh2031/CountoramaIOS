@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct CountersView: View {
+    
+    @Binding var showListView:Bool
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if showListView{
+            CounterListView()
+        }
+        else{
+            CounterGridView()
+        }
     }
 }
 
-#Preview {
-    CountersView()
-}
+

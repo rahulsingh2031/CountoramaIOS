@@ -12,7 +12,6 @@ struct CountoramaTabView: View {
         TabView{
             HomePage()
                 .tabItem { Label("Counters", systemImage: "alarm") }
-            
             TagPage()
                 .tabItem { Label("Tags", systemImage: "tag") }
             SettingPage()
