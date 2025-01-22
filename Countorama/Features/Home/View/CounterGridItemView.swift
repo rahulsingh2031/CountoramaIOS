@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct CounterGridItemView: View {
-    
+    @EnvironmentObject var homeVM:HomeViewModel
+    var counter:CDCounter
     var itemWidth:CGFloat
     var body: some View {
         RoundedRectangle(cornerRadius: 8)
             .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
             .frame(width:200, height: 245)
         
-            .foregroundColor(.gray)
+            .foregroundColor(Color(hex: counter.color!))
+            .onTapGesture {
+                homeVM.path.append(counter)
+            }
             .overlay{
                 VStack(spacing:8){
-                    Text("Read 15 min daily")
+                    Text(counter.name)
                         .fontWeight(.medium)
                         .font(.headline)
                         .lineLimit(1) // Restrict to 1 line
@@ -29,7 +33,7 @@ struct CounterGridItemView: View {
                     
                     VStack(spacing:12){
                         Spacer()
-                        Text("0")
+                        Text("\(counter.value)")
                             .font(.largeTitle)
                             .fontWeight(.semibold)
                             .scaleEffect(CGSize(width: 1.4, height: 1.4))
@@ -49,7 +53,7 @@ struct CounterGridItemView: View {
                     }
                     
                     //TODO: Change this interaction in zstack
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: {homeVM.incrementCount(counter: counter)}, label: {
                         Image(systemName: "arrowshape.up.fill")
                             .frame(width: 84 , height: 56)
                             .foregroundColor(.gray.opacity(0.8))
@@ -67,5 +71,5 @@ struct CounterGridItemView: View {
 }
 
 #Preview {
-    CounterGridItemView(itemWidth:80)
+    CounterGridItemView(counter: CDCounter.preview(context: PersistenceController.preview.container.viewContext), itemWidth:80)
 }

@@ -97,6 +97,9 @@ struct SettingPage: View {
                 
                 
                 Section("Legal"){
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Label("Clear All Counters", systemImage: "xmark.circle")
+                    })
                     Link(destination: /*@START_MENU_TOKEN@*/URL(string: "https://www.apple.com")!/*@END_MENU_TOKEN@*/, label: {
                         Label("Data Privacy Terms", systemImage: "shield")
                     })
@@ -108,11 +111,6 @@ struct SettingPage: View {
                 }.toggleStyle(SwitchToggleStyle(tint: .accent))
                 
             }
-            
-            
-            
-            
-            
             .navigationTitle("Settings")
         }
         

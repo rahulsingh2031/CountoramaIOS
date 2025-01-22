@@ -1,24 +1,10 @@
-//
-//  AddCounterPage.swift
-//  Countorama
-//
-//  Created by Raj Singh on 04/01/25.
-//
-
 import SwiftUI
-
 struct AddCounterPage: View {
     @Binding var isShowingAddCounter:Bool;
-    @State private var counterName = ""
-    @State private var counterColor = Color(.systemGray5)
-    @State private var counterFrequency = ""
-    @State private var hasTargetDate = false
-    @State private var counterTargetDate = Date()
-    
-    
-    @State private var selectedOption = "Option 1"
-    let options = ["Default", "Exercise", "Wrestling"]
-    
+
+    @EnvironmentObject var homeVM:HomeViewModel
+    @StateObject var vm = AddCounterViewModel(counterRepository: .shared, countRepository: .shared,tagRepository: .shared)
+            
     var body: some View {
         ZStack(alignment:.topTrailing){
             
@@ -31,40 +17,49 @@ struct AddCounterPage: View {
                     .padding()
                 
                 Form{
-                    TextField("Name", text: $counterName)
-                    TextField("Frequency", text: $counterFrequency)
+                    TextField("Name", text: $vm.counterName)
+                    TextField("Frequency", text: $vm.counterFrequency)
                         .textContentType(.telephoneNumber)
                     Section("Counter Configuration") {
                         
-                        ColorPicker("Color", selection: $counterColor)
+                        ColorPicker("Color", selection: $vm.counterColor)
                         
-                        
-                        Picker("Tag", selection: $selectedOption) {
-                            ForEach(options, id: \.self) { option in
-                                Text(option)
+                        if !vm.tags.isEmpty {
+                               Picker("Tag", selection: $vm.selectedOption) {
+                                   ForEach(vm.tags, id: \.self) { option in
+                                       Text(option.label)
+                                           .tag(option as CDTag?) 
+                                   }
+                               }
+                               .pickerStyle(.menu)
+                           }
+                       else
+                        {
+                            HStack{
+                                Text("Tag")
+                                Spacer()
+                                Text("No Tags Available")
+                                    .foregroundStyle(.accent)
                             }
+                            .padding(.horizontal,2)
                         }
-                        .pickerStyle(.menu)
                     }
                     .fontWeight(.regular)
                     
                     
                     Section("Optional"){
-                        Toggle("Set Target Date", isOn: $hasTargetDate)
-                        if(hasTargetDate)
+                        Toggle("Set Target Date", isOn: $vm.hasTargetDate)
+                        if(vm.hasTargetDate)
                         {
-                            DatePicker("Target Date", selection: $counterTargetDate, displayedComponents: .date)
+                            DatePicker("Target Date", selection: $vm.counterTargetDate, displayedComponents: .date)
                         }
                         
                     }.fontWeight(.regular)
                 }
                 
-                Button(action: {isShowingAddCounter = false}, label: {
+                Button(action: onConfirmSheet, label: {
                     Text("Confirm")
                         .frame(width: 260, height: 42)
-                    
-                    
-                    
                 })
                 .buttonStyle(.bordered)
                 .tint(.accent)
@@ -73,6 +68,13 @@ struct AddCounterPage: View {
             }
             
         }
+       
+        
+    }
+    
+    func onConfirmSheet(){
+        isShowingAddCounter = false
+        homeVM.addCounter(counterParam: CounterParam(name: vm.counterName, dailyFrequency: Int(vm.counterFrequency) ?? 0,tag: vm.selectedOption, targetDate: vm.counterTargetDate, color: vm.counterColor))
         
     }
 }

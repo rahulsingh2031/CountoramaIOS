@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23C64" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDCount" representedClassName="CDCount" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="uuid_" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="value_" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="counter" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDCounter" inverseName="counts" inverseEntity="CDCounter"/>
     </entity>
-    <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-    </elements>
+    <entity name="CDCounter" representedClassName="CDCounter" syncable="YES" codeGenerationType="class">
+        <attribute name="color_" optional="YES" attributeType="String"/>
+        <attribute name="createdAt_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dailyFrequency_" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="isArchieved_" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name_" optional="YES" attributeType="String"/>
+        <attribute name="targetDate_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="uuid_" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="value_" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="counts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDCount" inverseName="counter" inverseEntity="CDCount"/>
+        <relationship name="tag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDTag" inverseName="counters" inverseEntity="CDTag"/>
+    </entity>
+    <entity name="CDTag" representedClassName="CDTag" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="label_" optional="YES" attributeType="String"/>
+        <attribute name="uuid_" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="counters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDCounter" inverseName="tag" inverseEntity="CDCounter"/>
+    </entity>
 </model>

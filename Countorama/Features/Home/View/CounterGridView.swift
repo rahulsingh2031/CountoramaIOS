@@ -10,6 +10,9 @@ import SwiftUI
 struct CounterGridView: View {
     //    @Binding var searchText:String
     let columns:[GridItem] = [GridItem(.flexible()),GridItem(.flexible())]
+    @Binding var counters :[CDCounter]
+   
+   
     var body: some View {
         
         
@@ -18,22 +21,12 @@ struct CounterGridView: View {
             
             ScrollView {
                 LazyVGrid(columns: columns,spacing: 0) {
-                    CounterGridItemView(itemWidth: reader.size.width/2)
-                    CounterGridItemView(itemWidth: reader.size.width/2)
-                    CounterGridItemView(itemWidth: reader.size.width/2)
-                    CounterGridItemView(itemWidth: reader.size.width/2)
-                    CounterGridItemView(itemWidth: reader.size.width/2)
-                    CounterGridItemView(itemWidth: reader.size.width/2)
-                    CounterGridItemView(itemWidth: reader.size.width/2)
-                    
-                    
-                    
-                    
+                    ForEach(counters) { counter in
+                        CounterGridItemView(counter: counter, itemWidth: reader.size.width/2)
+                                                }
+                 
                 }
-                
             }
-            
-            
         }
         .padding(EdgeInsets(top: 4, leading: 8, bottom: 4, trailing: 8))
         
@@ -41,5 +34,5 @@ struct CounterGridView: View {
 }
 
 #Preview {
-    CounterGridView()
+    CounterGridView(counters: .constant([CDCounter.preview(context: PersistenceController.preview.container.viewContext)]))
 }

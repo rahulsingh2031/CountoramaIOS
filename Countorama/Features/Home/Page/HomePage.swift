@@ -7,18 +7,27 @@ import SwiftUI
 
 struct HomePage: View {
     
-    @State var searchText = ""
-    @State var showDrawer = false
-    @State  var isShowingAddCounter = false
-    @State var showListView = false
+        @State var showDrawer = false
+   
+    @State var isShowingAddCounter = false
+    @EnvironmentObject var homeVM :HomeViewModel
+    
     var body: some View {
         
         ZStack{
-            NavigationStack{
+            NavigationStack(path: $homeVM.path){
                 
-                CountersView(showListView: $showListView)
-                    .searchable(text: $searchText,prompt: Text("Search Your Counters"))
+                CountersView()
+                   
+                    .searchable(text: $homeVM.searchText,prompt: Text("Search Your Counters"))
+                   
+                    
                     .navigationTitle("Home")
+                    .navigationDestination(for: CDCounter.self, destination: { counter in
+                        AnalysisDetailPage(counter: counter )
+                            
+                    })
+                    .toolbar(homeVM.path.count > 0 ? .hidden : .visible, for: .tabBar)
                     .toolbar(content: {
                         
                         ToolbarItemGroup(placement: .navigationBarTrailing ){
@@ -28,14 +37,15 @@ struct HomePage: View {
                                 Image(systemName: "plus")
                             })
                             Button(action: {
-                                showListView.toggle()
+                                homeVM.toggleView()
                             }
                                    , label: {
-                                Image(systemName: showListView ? "square.grid.3x3.fill":"line.3.horizontal")
+                                Image(systemName: homeVM.showListView ? "square.grid.3x3.fill":"line.3.horizontal")
                             })
                         }
                     })
             }
+           
             .sheet(isPresented: $isShowingAddCounter, content: {
                 AddCounterPage(isShowingAddCounter: $isShowingAddCounter)
             })

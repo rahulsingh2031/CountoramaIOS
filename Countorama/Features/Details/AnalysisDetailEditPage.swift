@@ -11,6 +11,8 @@ struct AnalysisDetailEditPage: View {
     @State var newNameText = ""
     @State var newDate = Date()
     @State var newColor = Color(.systemGray5)
+    
+
     @Binding var isShowingEditDetail:Bool;
     var body: some View {
         ZStack(alignment:.topTrailing){

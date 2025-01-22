@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct CounterListView: View {
+    @Binding var counters :[CDCounter] 
     var body: some View {
         List{
-            CounterListItemView()
-            CounterListItemView()
-            CounterListItemView()
-            CounterListItemView()
-            CounterListItemView()
+            ForEach(counters) { counter in
+                CounterListItemView(counter:counter)
+                    
+            }
+            
+       
         }
         .listStyle(.plain)
     }
 }
 
 #Preview {
-    CounterListView()
+    CounterListView(counters: .constant([CDCounter.preview(context: PersistenceController.preview.container.viewContext)]))
+        
 }

@@ -19,12 +19,28 @@
 		1F658BD82D28593C00AD8940 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F658BD72D28593C00AD8940 /* Persistence.swift */; };
 		1F658BDB2D28593C00AD8940 /* Countorama.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F658BD92D28593C00AD8940 /* Countorama.xcdatamodeld */; };
 		1F658BE52D285ABD00AD8940 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F658BE42D285ABD00AD8940 /* HomePage.swift */; };
+		1F6B09932D401681009DBC44 /* TagSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B09922D401681009DBC44 /* TagSearchView.swift */; };
+		1F6B09972D401C8A009DBC44 /* NavigationPathObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B09962D401C8A009DBC44 /* NavigationPathObject.swift */; };
+		1F80B1112D350DD600CBDC6F /* CDCounter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80B1102D350DD600CBDC6F /* CDCounter+Ext.swift */; };
+		1F80B1132D3511B900CBDC6F /* CDCount+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80B1122D3511B900CBDC6F /* CDCount+Ext.swift */; };
+		1F80B1152D35132200CBDC6F /* CDTag+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80B1142D35132200CBDC6F /* CDTag+Ext.swift */; };
+		1F80B1182D3514DF00CBDC6F /* CDCounterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80B1172D3514DF00CBDC6F /* CDCounterRepository.swift */; };
+		1F80B11A2D35189D00CBDC6F /* CDCountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80B1192D35189D00CBDC6F /* CDCountRepository.swift */; };
+		1F80B11C2D351A2500CBDC6F /* CDTagRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80B11B2D351A2500CBDC6F /* CDTagRepository.swift */; };
+		1F80B11F2D3520B100CBDC6F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80B11E2D3520B100CBDC6F /* HomeViewModel.swift */; };
+		1F80B1222D352B5C00CBDC6F /* CounterParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80B1212D352B5C00CBDC6F /* CounterParams.swift */; };
+		1F80B1242D3540FA00CBDC6F /* AddCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80B1232D3540FA00CBDC6F /* AddCounterViewModel.swift */; };
+		1F80B1262D3542CF00CBDC6F /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80B1252D3542CF00CBDC6F /* CounterViewModel.swift */; };
 		1F90D53B2D29AE3300A30CBF /* HomeDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90D53A2D29AE3300A30CBF /* HomeDrawer.swift */; };
 		1F90D53F2D29B80200A30CBF /* CountoramaTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90D53E2D29B80200A30CBF /* CountoramaTabView.swift */; };
 		1F90D5422D29B90500A30CBF /* TagPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90D5412D29B90500A30CBF /* TagPage.swift */; };
 		1F90D5472D29B93700A30CBF /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90D5462D29B93700A30CBF /* SettingPage.swift */; };
+		1FB4B7D32D40F2E200A87BB5 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4B7D22D40F2E200A87BB5 /* SettingViewModel.swift */; };
 		1FBBCB022D286E0300DDE9BB /* CounterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBCB012D286E0300DDE9BB /* CounterListItemView.swift */; };
 		1FBBCB042D2876A000DDE9BB /* AddCounterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBCB032D2876A000DDE9BB /* AddCounterPage.swift */; };
+		1FBD1FCD2D35967000FF3E3D /* TagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD1FCC2D35967000FF3E3D /* TagViewModel.swift */; };
+		1FBD1FD02D35972D00FF3E3D /* TagTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD1FCF2D35972D00FF3E3D /* TagTextField.swift */; };
+		1FCC59982D36E8D3008BB2A1 /* HeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC59972D36E8D3008BB2A1 /* HeatmapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,12 +57,28 @@
 		1F658BD72D28593C00AD8940 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1F658BDA2D28593C00AD8940 /* Countorama.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Countorama.xcdatamodel; sourceTree = "<group>"; };
 		1F658BE42D285ABD00AD8940 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		1F6B09922D401681009DBC44 /* TagSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSearchView.swift; sourceTree = "<group>"; };
+		1F6B09962D401C8A009DBC44 /* NavigationPathObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathObject.swift; sourceTree = "<group>"; };
+		1F80B1102D350DD600CBDC6F /* CDCounter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCounter+Ext.swift"; sourceTree = "<group>"; };
+		1F80B1122D3511B900CBDC6F /* CDCount+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCount+Ext.swift"; sourceTree = "<group>"; };
+		1F80B1142D35132200CBDC6F /* CDTag+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDTag+Ext.swift"; sourceTree = "<group>"; };
+		1F80B1172D3514DF00CBDC6F /* CDCounterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCounterRepository.swift; sourceTree = "<group>"; };
+		1F80B1192D35189D00CBDC6F /* CDCountRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCountRepository.swift; sourceTree = "<group>"; };
+		1F80B11B2D351A2500CBDC6F /* CDTagRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDTagRepository.swift; sourceTree = "<group>"; };
+		1F80B11E2D3520B100CBDC6F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1F80B1212D352B5C00CBDC6F /* CounterParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterParams.swift; sourceTree = "<group>"; };
+		1F80B1232D3540FA00CBDC6F /* AddCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterViewModel.swift; sourceTree = "<group>"; };
+		1F80B1252D3542CF00CBDC6F /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		1F90D53A2D29AE3300A30CBF /* HomeDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDrawer.swift; sourceTree = "<group>"; };
 		1F90D53E2D29B80200A30CBF /* CountoramaTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountoramaTabView.swift; sourceTree = "<group>"; };
 		1F90D5412D29B90500A30CBF /* TagPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPage.swift; sourceTree = "<group>"; };
 		1F90D5462D29B93700A30CBF /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		1FB4B7D22D40F2E200A87BB5 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		1FBBCB012D286E0300DDE9BB /* CounterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListItemView.swift; sourceTree = "<group>"; };
 		1FBBCB032D2876A000DDE9BB /* AddCounterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterPage.swift; sourceTree = "<group>"; };
+		1FBD1FCC2D35967000FF3E3D /* TagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewModel.swift; sourceTree = "<group>"; };
+		1FBD1FCF2D35972D00FF3E3D /* TagTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTextField.swift; sourceTree = "<group>"; };
+		1FCC59972D36E8D3008BB2A1 /* HeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +95,7 @@
 		1F2D456A2D30341800C1F45A /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				1FCC59962D36E8BA008BB2A1 /* Views */,
 				1F2D456B2D30343700C1F45A /* AnalysisDetailPage.swift */,
 				1F2D456D2D30437A00C1F45A /* AnalysisDetailEditPage.swift */,
 			);
@@ -72,6 +105,9 @@
 		1F346DCB2D2ADD7E00113DFF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1F80B1162D3514B900CBDC6F /* Repository */,
+				1F80B10F2D350DB800CBDC6F /* Extensions */,
+				1F6B09962D401C8A009DBC44 /* NavigationPathObject.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -129,6 +165,8 @@
 		1F658BE22D285A9300AD8940 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1F80B1202D352B4C00CBDC6F /* Model */,
+				1F80B11D2D3520A200CBDC6F /* ViewModel */,
 				1FBBCB002D286DD400DDE9BB /* Page */,
 				1F658BE32D285A9F00AD8940 /* View */,
 			);
@@ -148,9 +186,49 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1F80B10F2D350DB800CBDC6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F80B1102D350DD600CBDC6F /* CDCounter+Ext.swift */,
+				1F80B1122D3511B900CBDC6F /* CDCount+Ext.swift */,
+				1F80B1142D35132200CBDC6F /* CDTag+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1F80B1162D3514B900CBDC6F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1F80B1172D3514DF00CBDC6F /* CDCounterRepository.swift */,
+				1F80B1192D35189D00CBDC6F /* CDCountRepository.swift */,
+				1F80B11B2D351A2500CBDC6F /* CDTagRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1F80B11D2D3520A200CBDC6F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F80B11E2D3520B100CBDC6F /* HomeViewModel.swift */,
+				1F80B1232D3540FA00CBDC6F /* AddCounterViewModel.swift */,
+				1F80B1252D3542CF00CBDC6F /* CounterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F80B1202D352B4C00CBDC6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F80B1212D352B5C00CBDC6F /* CounterParams.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1F90D5402D29B8F300A30CBF /* Tag */ = {
 			isa = PBXGroup;
 			children = (
+				1FBD1FCB2D35965E00FF3E3D /* ViewModel */,
+				1FBD1FCE2D3596F100FF3E3D /* Views */,
 				1F90D5432D29B91600A30CBF /* Page */,
 			);
 			path = Tag;
@@ -168,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				1F90D5452D29B92D00A30CBF /* Page */,
+				1FB4B7D22D40F2E200A87BB5 /* SettingViewModel.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -187,6 +266,31 @@
 				1FBBCB032D2876A000DDE9BB /* AddCounterPage.swift */,
 			);
 			path = Page;
+			sourceTree = "<group>";
+		};
+		1FBD1FCB2D35965E00FF3E3D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1FBD1FCC2D35967000FF3E3D /* TagViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1FBD1FCE2D3596F100FF3E3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FBD1FCF2D35972D00FF3E3D /* TagTextField.swift */,
+				1F6B09922D401681009DBC44 /* TagSearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1FCC59962D36E8BA008BB2A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FCC59972D36E8D3008BB2A1 /* HeatmapView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,21 +363,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F80B1132D3511B900CBDC6F /* CDCount+Ext.swift in Sources */,
+				1F80B1242D3540FA00CBDC6F /* AddCounterViewModel.swift in Sources */,
+				1FBD1FD02D35972D00FF3E3D /* TagTextField.swift in Sources */,
+				1F6B09932D401681009DBC44 /* TagSearchView.swift in Sources */,
 				1F90D53B2D29AE3300A30CBF /* HomeDrawer.swift in Sources */,
 				1F2D456E2D30437A00C1F45A /* AnalysisDetailEditPage.swift in Sources */,
 				1F90D5472D29B93700A30CBF /* SettingPage.swift in Sources */,
 				1F90D5422D29B90500A30CBF /* TagPage.swift in Sources */,
+				1F80B11F2D3520B100CBDC6F /* HomeViewModel.swift in Sources */,
+				1F80B1152D35132200CBDC6F /* CDTag+Ext.swift in Sources */,
 				1F658BDB2D28593C00AD8940 /* Countorama.xcdatamodeld in Sources */,
 				1F346DC82D2AD5B200113DFF /* CounterGridItemView.swift in Sources */,
 				1F346DCA2D2AD9FD00113DFF /* CounterListView.swift in Sources */,
+				1F80B1222D352B5C00CBDC6F /* CounterParams.swift in Sources */,
 				1F346DC62D2AD50400113DFF /* CounterGridView.swift in Sources */,
 				1F658BE52D285ABD00AD8940 /* HomePage.swift in Sources */,
+				1F80B1182D3514DF00CBDC6F /* CDCounterRepository.swift in Sources */,
+				1FCC59982D36E8D3008BB2A1 /* HeatmapView.swift in Sources */,
 				1F658BD82D28593C00AD8940 /* Persistence.swift in Sources */,
 				1F346DCF2D2ADE4800113DFF /* CountersView.swift in Sources */,
+				1F80B1262D3542CF00CBDC6F /* CounterViewModel.swift in Sources */,
 				1FBBCB042D2876A000DDE9BB /* AddCounterPage.swift in Sources */,
 				1F90D53F2D29B80200A30CBF /* CountoramaTabView.swift in Sources */,
+				1FBD1FCD2D35967000FF3E3D /* TagViewModel.swift in Sources */,
+				1F6B09972D401C8A009DBC44 /* NavigationPathObject.swift in Sources */,
+				1F80B11A2D35189D00CBDC6F /* CDCountRepository.swift in Sources */,
 				1F2D456C2D30343700C1F45A /* AnalysisDetailPage.swift in Sources */,
+				1FB4B7D32D40F2E200A87BB5 /* SettingViewModel.swift in Sources */,
 				1F658BCF2D28593800AD8940 /* CountoramaApp.swift in Sources */,
+				1F80B11C2D351A2500CBDC6F /* CDTagRepository.swift in Sources */,
+				1F80B1112D350DD600CBDC6F /* CDCounter+Ext.swift in Sources */,
 				1FBBCB022D286E0300DDE9BB /* CounterListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

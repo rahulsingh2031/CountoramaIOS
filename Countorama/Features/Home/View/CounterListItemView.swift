@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct CounterListItemView: View {
-    
+    @EnvironmentObject var homeVM:HomeViewModel
+    var counter:CDCounter
     var body: some View {
         RoundedRectangle(cornerRadius: 12)
             .frame(height: 132)
-            .foregroundColor(.gray)
+            .foregroundColor(Color(hex: counter.color!))
             .listRowSeparator(.hidden)
             .listRowBackground(Color(.systemBackground))
+            .onTapGesture {
+                    homeVM.path.append(counter)
+                }
             .overlay{
                 VStack(alignment:.leading){
-                    Text("Counter Name")
+                    Text(counter.name)
                         .fontWeight(.medium)
                         .font(.title3)
                         .lineLimit(1) // Restrict to 1 line
@@ -43,15 +47,16 @@ struct CounterListItemView: View {
                     }
                     
                     HStack {
-                        Text("0")
+                        Text("\(counter.value)")
                             .font(.largeTitle)
                             .fontWeight(.semibold)
                             .scaleEffect(CGSize(width: 1.4, height: 1.4))
+                            .padding(.leading,10)
                         
                         
                         Spacer()
                         //TODO: Change this interaction in zstack
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: {homeVM.incrementCount(counter: counter)}, label: {
                             Image(systemName: "arrowshape.up.fill")
                                 .frame(width: 72 , height: 48)
                                 .foregroundColor(.gray.opacity(0.8))
@@ -67,5 +72,5 @@ struct CounterListItemView: View {
 
 
 #Preview {
-    CounterListItemView()
+    CounterListItemView(counter: CDCounter.preview(context: PersistenceController.preview.container.viewContext))
 }

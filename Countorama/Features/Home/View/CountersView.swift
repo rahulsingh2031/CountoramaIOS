@@ -9,14 +9,21 @@ import SwiftUI
 
 struct CountersView: View {
     
-    @Binding var showListView:Bool
+    @EnvironmentObject var homeVM:HomeViewModel
+    
+    
     var body: some View {
-        if showListView{
-            CounterListView()
-        }
-        else{
-            CounterGridView()
-        }
+        
+            if homeVM.showListView{
+                CounterListView(counters:$homeVM.counters)
+                
+            }
+            else{
+                CounterGridView(counters:$homeVM.counters)
+            }
+        
+        
+       
     }
 }
 
